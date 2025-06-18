@@ -1,67 +1,101 @@
+/* Tipografía y estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #000;
-  text-align: center;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+  color: #111;
+  margin: 0;
+  padding: 0;
 }
 
 .contenedor {
   max-width: 700px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
+  background-color: #fff;
 }
 
+/* Logo */
 .logo {
-  width: 150px;
-  margin-bottom: 20px;
+  display: block;
+  max-width: 120px;
+  margin: 0 auto 20px auto;
 }
 
+/* Títulos */
 h2, h3 {
+  text-align: center;
   margin: 5px 0;
+  font-weight: 600;
+  color: #333;
 }
 
+/* Datos Generales */
 .datos-generales p {
-  margin: 5px 0;
-}
-
-.seccion {
-  border: 3px solid;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 20px 0;
+  margin: 6px 0;
+  font-size: 1rem;
   text-align: left;
 }
 
-.roja {
-  border-color: red;
+/* Secciones */
+.seccion {
+  border: 2.5px solid;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #fafafa;
 }
 
-.azul {
-  border-color: dodgerblue;
-}
-
-.naranja {
-  border-color: orange;
-}
-
-.verde {
-  border-color: green;
-}
-
-h4 {
-  margin-top: 0;
+.seccion h4 {
   text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
   text-decoration: underline;
 }
 
+.roja {
+  border-color: #e74c3c;
+}
+
+.azul {
+  border-color: #3498db;
+}
+
+.naranja {
+  border-color: #f39c12;
+}
+
+.verde {
+  border-color: #27ae60;
+}
+
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .alergias {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 5px;
+  font-size: 0.95rem;
+}
+
+/* Adaptabilidad */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 15px;
+  }
+
+  .logo {
+    max-width: 90px;
+  }
+
+  .datos-generales p, .seccion h4, ul, .alergias div {
+    font-size: 0.95rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
 }
