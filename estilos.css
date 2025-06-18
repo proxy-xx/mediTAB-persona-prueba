@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  margin: 5px 0;
+}
+
+.datos-generales p {
+  margin: 5px 0;
+}
+
+.seccion {
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.roja {
+  border-color: red;
+}
+
+.azul {
+  border-color: dodgerblue;
+}
+
+.naranja {
+  border-color: orange;
+}
+
+.verde {
+  border-color: green;
+}
+
+h4 {
+  margin-top: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alergias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
